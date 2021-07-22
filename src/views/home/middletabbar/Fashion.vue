@@ -1,5 +1,8 @@
 <template>
   <div id="finish">
+    <p>这里是一个测试
+      
+    </p>
     <TabBarItem v-for="(item,index) in list" :key="index">
       <img src="~assets/logo.png" alt="" slot="tabbar-img"/>
       <div slot="tabbar-text">流行商品{{item}}</div>
