@@ -1,9 +1,9 @@
 <template>
   <div id="toptabbar">
     <TabBar>
-      <div slot="toptabbar_left">左侧</div>
-      <div slot="toptabbar_center">中间</div>
-      <div slot="toptabbar_right">右侧</div>
+      <div slot="toptabbar_left"></div>
+      <div slot="toptabbar_center">首页</div>
+      <div slot="toptabbar_right">搜索</div>
     </TabBar>
   </div>
 </template>

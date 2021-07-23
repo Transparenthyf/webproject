@@ -37,11 +37,11 @@ const routes = [
     name: 'Category',
     component: () => import('views/category/Category.vue'),
     children: [
-      // {
-      //   path: '',
-      //   name: 'Now',
-      //   component: () => import('views/category/categroylist/Now.vue'),
-      // },
+      {
+        path: '',
+        name: 'Fashion',
+        component: () => import('views/home/middletabbar/Fashion.vue'),
+      },
       {
         path: 'now',
         name: 'Fashion',
@@ -71,10 +71,6 @@ const routes = [
     component: () => import('views/profile/ProFile.vue')
   },
 
-
-  // 子组件路由
- 
-  
 ]
 
 const router = new VueRouter({

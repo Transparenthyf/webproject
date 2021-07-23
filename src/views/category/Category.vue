@@ -1,6 +1,6 @@
 <template>
   <div id="category">
-    <!-- 顶部标签 -->
+    <!-- 页眉 -->
     <TabBar>
       <div slot="toptabbar_center">商品分类</div>
     </TabBar>

@@ -1,26 +1,62 @@
 <template>
-  <div class="trolley">
-    <h1>This is an about page</h1>
-    <TopTabBar>
-      <div slot="toptabbar_left">左侧</div>
-      <div slot="toptabbar_center">中间</div>
-      <div slot="toptabbar_right">右侧</div>
-    </TopTabBar>
+  <div id="trolley">
+    <!-- 页眉 -->
+    <TabBar>
+      <div slot="toptabbar_center">购物车</div>
+    </TabBar>
+    <!-- 购物车列表 -->
+    <div id="trolleyshow">
+      <TrolleyList></TrolleyList>
+      <TrolleyList></TrolleyList>
+      <TrolleyList></TrolleyList>
+      <TrolleyList></TrolleyList>
+      <TrolleyList></TrolleyList>
+      <TrolleyList></TrolleyList>
+      <TrolleyList></TrolleyList>
+    </div>
+    <!-- 商品推荐 -->
+    <div class="recommend"><p>猜你喜欢</p></div>
+    <Fashion></Fashion>
+    <!-- 结账栏 -->
+    <PayBar></PayBar>
+    <!-- 底部填充 -->
+    <BottomSpace></BottomSpace>
+    <BottomSpace></BottomSpace>
   </div>
 </template>
 
 <script>
-import TopTabBar from "components/toptabbar/TopTabBar.vue";
-
+import TabBar from "components/toptabbar/TabBar.vue";
+import TrolleyList from "./TrolleyList.vue"
+import BottomSpace from "components/bottomspace/BottomSpace.vue";
+import Fashion from "views/home/middletabbar/Fashion.vue"
+import PayBar from "./PayBar.vue"
 
 export default {
   name: "Trolley",
   props: {},
   components: {
-    TopTabBar
+    TabBar,
+    TrolleyList,
+    BottomSpace,
+    Fashion,
+    PayBar,
   },
 };
 </script>
 
 <style>
+#trolley .tabbar{
+  background-color: aquamarine;
+}
+#trolleyshow>:first-child{
+  margin-top: 50px;
+}
+.recommend{
+  text-align: center;
+  font-size: 20px;
+  background-color: rgb(241, 226, 205);
+  margin: 5px;
+  border-radius: 5px;
+}
 </style>

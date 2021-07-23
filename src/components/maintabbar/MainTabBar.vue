@@ -55,5 +55,7 @@ export default {
   justify-content: space-evenly;
 
 }
-
+#tabbar a{
+  text-decoration: none;
+}
 </style>

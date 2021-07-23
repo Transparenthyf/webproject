@@ -12,5 +12,10 @@ export default {
 #bottomspace {
   height: 60px;
   width: 100%;
+  /* position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+
 }
 </style>

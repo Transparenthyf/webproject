@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <!-- 顶部导航栏 -->
+    <!-- 页眉 -->
     <TopTabBar></TopTabBar>
 
     <!-- 轮播图 -->
