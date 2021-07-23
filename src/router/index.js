@@ -12,12 +12,12 @@ const routes = [
     children: [
       {
         path: '',
-        name: 'fashion',
+        name: 'Fashion',
         component: () => import('views/home/middletabbar/Fashion.vue')
       },
       {
         path: 'fashion',
-        name: 'fashion',
+        name: 'Fashion',
         component: () => import('views/home/middletabbar/Fashion.vue')
       },
       {
@@ -33,15 +33,27 @@ const routes = [
     ]
   },
   {
-    path: 'trolley',
+    path: '/category',
+    name: 'Category',
+    component: () => import('views/category/Category.vue'),
+    children: [
+      // {
+      //   path: '',
+      //   name: 'Now',
+      //   component: () => import('views/category/categroylist/Now.vue'),
+      // },
+      {
+        path: 'now',
+        name: 'Now',
+        component: () => import('views/category/categroylist/Now.vue'),
+      }
+    ]
+  },
+  {
+    path: '/trolley',
     name: 'Trolley',
     component: () => import('views/trolley/Trolley.vue'),
     
-  },
-  {
-    path: '/category',
-    name: 'Category',
-    component: () => import('views/category/Category.vue')
   },
   {
     path: '/profile',

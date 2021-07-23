@@ -8,13 +8,13 @@
           <div slot="tabbar-text">首页</div>
         </tab-bar-item>
       </router-link>
-      <router-link to="/trolley">
+      <router-link to="/category">
         <tab-bar-item>
           <img src="~assets/logo.png" alt="" slot="tabbar-img"/>
           <div slot="tabbar-text">分类</div>
         </tab-bar-item>
       </router-link>
-      <router-link to="/category">
+      <router-link to="/trolley">
         <tab-bar-item>
           <img src="~assets/logo.png" alt="" slot="tabbar-img"/>
           <div slot="tabbar-text">购物车</div>
