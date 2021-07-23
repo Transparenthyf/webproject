@@ -6,6 +6,8 @@
     </TabBar>
     <!-- 分类组件 -->
     <CategroyList></CategroyList>
+    <!-- 底部填充 -->
+    <BottomSpace></BottomSpace>
   </div>
  
 </template>
@@ -14,6 +16,7 @@
 
 import TabBar from "components/toptabbar/TabBar.vue"
 import CategroyList from "./CategoryList.vue"
+import BottomSpace from "components/bottomspace/BottomSpace.vue";
 
 export default {
   name: "Category",
@@ -23,6 +26,7 @@ export default {
   components: {
     TabBar,
     CategroyList,
+    BottomSpace,
   },
 };
 </script>

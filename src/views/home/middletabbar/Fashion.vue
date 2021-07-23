@@ -102,12 +102,13 @@ components: {
 #finish>div{
   background-color: aqua;
   width: 46%;
-  height: 200px;
+  /* height: 200px; */
   margin-top: 10px;
   position: relative;
 }
 #finish img{
-  width: 150px;
+  width: 90%;
+  margin-bottom: 30px;
 }
 #finish .tabbaritem div{
   position: absolute;

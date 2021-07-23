@@ -35,12 +35,12 @@ export default {
 #newstyle>div{
   background-color: aqua;
   width: 46%;
-  height: 200px;
   margin-top: 10px;
   position: relative;
 }
 #newstyle img{
-  width: 150px;
+  width: 90%;
+  margin-bottom: 30px;
 }
 #newstyle .tabbaritem div{
   position: absolute;

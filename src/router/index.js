@@ -44,9 +44,19 @@ const routes = [
       // },
       {
         path: 'now',
-        name: 'Now',
-        component: () => import('views/category/categroylist/Now.vue'),
-      }
+        name: 'Fashion',
+        component: () => import('views/home/middletabbar/Fashion.vue'),
+      },
+      {
+        path: 'new',
+        name: 'NewStyle',
+        component: () => import('views/home/middletabbar/NewStyle.vue'),
+      },
+      {
+        path: 'sift',
+        name: 'Choiceness',
+        component: () => import('views/home/middletabbar/Choiceness.vue'),
+      },
     ]
   },
   {

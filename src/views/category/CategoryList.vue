@@ -2,12 +2,15 @@
   <div id="categroylist">
     <!-- 导航列表 -->
     <div id="categroylistleft" >
-      <div v-for="(item , index) in categroylist" :key="index" class="liststyle">
-       <router-link to = "/category/now">
-         {{item.title}}
-       </router-link>
-       <!-- 在这里做测试{{item}} -->
-       </div>
+      <div class="liststyle">
+        <router-link to = "/category/now">正在流行</router-link>
+      </div>
+      <div class="liststyle">
+        <router-link to = "/category/new">新款上架</router-link>
+      </div>
+      <div class="liststyle">
+        <router-link to = "/category/sift">精选商品</router-link>
+      </div>
     </div>
     
     <!-- 商品展示 -->
@@ -24,63 +27,11 @@ export default {
   name: "CategroyList",
   data() {
     return{
-      categroylist: [
-        {
-          router: "/category/now",
-          title: "正在流行",
-          type: ["秋款上新","时尚套装","连衣裙","T恤","牛仔裤","卫衣","秋款外套","衬衫","男休闲裤","男牛仔裤","五分裤","帆布鞋","运动鞋"]
-        },
-        {
-          router: "jacket",
-          title: "夹克",
-          type: ["秋款上新","时尚套装","连衣裙","T恤","牛仔裤","卫衣","秋款外套","衬衫","男休闲裤","男牛仔裤","五分裤","帆布鞋","运动鞋"]
-        },
-        {
-          router: "jacket",
-          title: "夹克",
-          type: ["秋款上新","时尚套装","连衣裙","T恤","牛仔裤","卫衣","秋款外套","衬衫","男休闲裤","男牛仔裤","五分裤","帆布鞋","运动鞋"]
-        },
-        {
-          router: "jacket",
-          title: "夹克",
-          type: ["秋款上新","时尚套装","连衣裙","T恤","牛仔裤","卫衣","秋款外套","衬衫","男休闲裤","男牛仔裤","五分裤","帆布鞋","运动鞋"]   
-        },
-        {
-          router: "jacket",
-          title: "夹克",
-          type: ["秋款上新","时尚套装","连衣裙","T恤","牛仔裤","卫衣","秋款外套","衬衫","男休闲裤","男牛仔裤","五分裤","帆布鞋","运动鞋"]   
-        },
-        {
-          router: "jacket",
-          title: "夹克",
-          type: ["秋款上新","时尚套装","连衣裙","T恤","牛仔裤","卫衣","秋款外套","衬衫","男休闲裤","男牛仔裤","五分裤","帆布鞋","运动鞋"]   
-        },
-        {
-          router: "jacket",
-          title: "夹克",
-          type: ["秋款上新","时尚套装","连衣裙","T恤","牛仔裤","卫衣","秋款外套","衬衫","男休闲裤","男牛仔裤","五分裤","帆布鞋","运动鞋"]    
-        },
-        {
-          router: "jacket",
-          title: "夹克",
-          type: ["秋款上新","时尚套装","连衣裙","T恤","牛仔裤","卫衣","秋款外套","衬衫","男休闲裤","男牛仔裤","五分裤","帆布鞋","运动鞋"]    
-        },
-        {
-          router: "jacket",
-          title: "夹克",
-          type: ["秋款上新","时尚套装","连衣裙","T恤","牛仔裤","卫衣","秋款外套","衬衫","男休闲裤","男牛仔裤","五分裤","帆布鞋","运动鞋"]    
-        },
-      ]
     }
   },
   computed: {
-    routersrc() {
-      src = "/category/" + item.router
-      return src
-    }
   },
   components: {
-    // Now,
   }
 }
 </script>
@@ -89,17 +40,37 @@ export default {
 #categroylist{
   display: flex;
   flex-wrap: wrap;
+  margin-top: 46px;
+
 }
 #categroylistleft{
   width: 25%;
+    /* 定位 */
+  position: fixed;
+  top: 46px;
+  left: 2px;
 
 }
 #categroylistshow{
   width: 75%;
+      /* 定位 */
+  position: absolute;
+  right: 0px;
 }
 .liststyle{
   background-color: bisque;
   height: 30px;
-  border: 2px solid brown;
+  line-height: 30px;
+  /* border: 2px solid brown; */
+  /* border-top: 0px solde black; */
+  border-left: 2px solid brown;
+  border-right: 2px solid brown;
+  border-bottom: 2px solid brown;
+}
+.liststyle:first-child{
+  border-top: 2px solid brown ;
+}
+.liststyle a{
+  text-decoration: none;
 }
 </style>

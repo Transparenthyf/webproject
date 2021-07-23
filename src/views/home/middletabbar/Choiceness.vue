@@ -35,12 +35,12 @@ export default {
 #choiceness>div{
   background-color: aqua;
   width: 46%;
-  height: 200px;
   margin-top: 10px;
   position: relative;
 }
 #choiceness img{
-  width: 150px;
+  width: 90%;
+  margin-bottom: 30px;
 }
 #choiceness .tabbaritem div{
   position: absolute;

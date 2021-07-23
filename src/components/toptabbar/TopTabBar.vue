@@ -21,14 +21,10 @@ export default {
 </script>
 
 <style>
-#toptabbar {
+#toptabbar .tabbar{
   background-color: aquamarine;
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-    z-index: 100;
+
  
   /* height: 46px;
   width: 100%;
