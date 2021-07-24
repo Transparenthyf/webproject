@@ -24,7 +24,7 @@
           </div>
           <div>
             <input type="button" value=" - " @click="sub">
-            <span>{{goodsnum}}</span>
+            <span> × {{goodsnum}}</span>
             <input type="button" value=" + " @click="add"></div>
         </div>
       </div>
@@ -56,11 +56,13 @@ export default {
 
 <style>
 .trolleylist{
-  margin-top: 5px;
+  margin: 5px;
   border: 2px solid skyblue;
   border-radius: 15px;
   background-color: rgb(241, 226, 205);
 }
+
+/* 店铺名称 */
 .store{
   display: flex;
   height: 20px;
@@ -72,6 +74,7 @@ export default {
 .store p{
   padding-left: 5px;
 }
+/* 商品信息 */
 .goods{
   display: flex;
   justify-content: space-around;

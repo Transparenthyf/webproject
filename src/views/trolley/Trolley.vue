@@ -55,8 +55,10 @@ export default {
 .recommend{
   text-align: center;
   font-size: 20px;
-  background-color: rgb(241, 226, 205);
+  background-color: greenyellow;
   margin: 5px;
   border-radius: 5px;
+  height: 35px;
+  line-height: 35px;
 }
 </style>
