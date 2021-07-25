@@ -227,6 +227,7 @@ export default {
 </script>
 
 <style>
+/* 父容器样式 */
 #slideshow{
   position: relative;
   width: 300px;
@@ -234,6 +235,7 @@ export default {
   margin: auto;
   overflow: hidden;
 }
+/* 轮播图样式 */
 .li{
   position: absolute;
   top: 0px;
@@ -301,6 +303,7 @@ export default {
 .slideshowready{
   z-index: 9;
 }
+/* 轮播图底部圆点样式 */
 #slideshow ul{
   position: absolute;
   bottom: 3px;
